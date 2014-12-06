@@ -1,0 +1,12 @@
+<div ng-controller="BlogEntryCtrl">
+
+
+  <accordion close-others="oneAtATime">
+
+    <accordion-group heading="{{post.title}}" ng-repeat="post in posts">
+      <p>{{ post.contents }}</p>
+      <a href="/api/posts/{{post._id}}">Comment!</a>
+    </accordion-group>
+
+  </accordion>
+</div>
