@@ -3,18 +3,18 @@
   <div class="row">
     <div class="col-lg-12">
 
-      <form name="blogForm" ng-submit="submit()">
+      <form novalidate name="blogForm">
         <div class="form-group">
           <label for="title">Title</label>
-          <input class="form-control" placeholder="Enter email" ng-model="post.title">
+          <input class="form-control" ng-model="post.title" required />
         </div>
 
         <div class="form-group">
           <label for="contents">Contents</label>
-          <textarea class="form-control" ng-model="post.contents" rows="10"></textarea>
+          <textarea class="form-control" ng-model="post.contents" rows="10" required></textarea>
         </div>
 
-        <input type="submit" id="submit" value="Submit" class="btn btn-primary" />
+        <input type="submit" value="Submit" class="btn btn-primary" ng-click="postEntry()"/>
       </form>
 
     </div>
