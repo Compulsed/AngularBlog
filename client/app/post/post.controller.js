@@ -2,8 +2,7 @@
 
 angular.module('blogApp')
   .controller('PostCtrl', function ($scope, $http) {
-    $scope.myAddtion = "La";
-
+    
     $scope.awesomeThings = [];
 
     $http.get('/api/things').success(function(awesomeThings) {
