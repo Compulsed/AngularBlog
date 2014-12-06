@@ -25,7 +25,4 @@ angular.module('blogApp')
       return route === $location.path();
     };
 
-
-
-
   });
