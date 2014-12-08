@@ -19,25 +19,24 @@ angular.module('blogApp')
 
 
     if($scope.post.title && $scope.post.contents){
-      console.log($scope.post);
-
       $http.post('/api/posts', {
         title : $scope.post.title,
         contents: $scope.post.contents
       }).
         success(function(data, status, headers, config){
-          AlertService.alerts.push({
+
+          AlertService.show({
             type: 'success',
             msg: 'Successfully posted the article!'
-          });
+          }, 5000);
 
           $location.path('/blog');
         }).
         error(function(data, status, headers, config){
-          AlertService.alerts.push({
+          AlertService.show({
             type: 'danger',
             msg: 'Error, unable to post the article!'
-          });
+          }, 5000);
 
           console.log('failed to post to /api/posts');
         });

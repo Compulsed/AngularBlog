@@ -20,18 +20,19 @@ angular.module('blogApp')
 
     $http.delete('/api/posts/' + post._id)
       .success(function(data, status, headers, config, statusText){
-        AlertService.alerts.push({
+
+        AlertService.show({
           type: 'success',
           msg: 'Successfully deleted the article!'
-        });
+        }, 5000);
 
         panel.fadeOut();
       })
       .error(function(data, status, headers, config, statusText){
-        AlertService.alerts.push({
+        AlertService.show({
           type: 'danger',
           msg: 'Failed to delete the article!'
-        });
+        }, 5000);
 
         console.log('failed to delete to /api/posts/' + post._id);
       });
