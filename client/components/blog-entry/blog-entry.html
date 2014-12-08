@@ -5,11 +5,11 @@
     <accordion-group ng-repeat="post in posts">
       <accordion-heading>
         {{post.title}}
-         <span class="glyphicon glyphicon-remove pull-right" ng-click="remove(post, $event)"></span>
+        <span class="glyphicon glyphicon-remove pull-right" ng-click="remove(post, $event)"></span> <span class="time pull-right" am-time-ago="post.posted"></span>
       </accordion-heading>
 
       <p>{{ post.contents }}</p>
-      <a href="/blog/{{post._id}}">Comment!</a>
+      <a href="/blog/{{post._id}}">Make a comment</a>
     </accordion-group>
 
   </accordion>

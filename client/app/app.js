@@ -6,7 +6,8 @@ angular.module('blogApp', [
   'ngSanitize',
   'ui.router',
   'ui.bootstrap',
-  'btford.markdown'
+  'btford.markdown',
+  'angularMoment'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $urlRouterProvider
