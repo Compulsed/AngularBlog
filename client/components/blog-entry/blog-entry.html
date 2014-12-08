@@ -1,9 +1,13 @@
 <div ng-controller="BlogEntryCtrl">
 
-
   <accordion close-others="oneAtATime">
 
-    <accordion-group heading="{{post.title}}" ng-repeat="post in posts">
+    <accordion-group ng-repeat="post in posts">
+      <accordion-heading>
+        {{post.title}}
+         <span class="glyphicon glyphicon-remove pull-right" ng-click="remove(post, $event)"></span>
+      </accordion-heading>
+
       <p>{{ post.contents }}</p>
       <a href="/blog/{{post._id}}">Comment!</a>
     </accordion-group>
