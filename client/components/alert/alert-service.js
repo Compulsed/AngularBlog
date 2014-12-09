@@ -1,6 +1,7 @@
 angular.module('blogApp').
   factory('AlertService', function($timeout){
     return {
+      // {{ msg : '', type: ''}}
       alerts: [],
 
       show: function(message, timeout){

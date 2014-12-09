@@ -28,3 +28,8 @@
     margin-top: 70px;
     border-top: 1px solid #E5E5E5;
 }
+
+.markdown-container img{
+   display: table-cell;
+   max-width: 100%; 
+}

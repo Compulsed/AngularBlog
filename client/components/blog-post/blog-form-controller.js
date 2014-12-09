@@ -12,11 +12,6 @@ angular.module('blogApp')
 
   // Triggers if fields contain content
   $scope.postEntry = function(){
-    console.log('inside postEntry');
-    $scope.$emit('someEvent', {
-      bob: 'yes'
-    });
-
 
     if($scope.post.title && $scope.post.contents){
       $http.post('/api/posts', {

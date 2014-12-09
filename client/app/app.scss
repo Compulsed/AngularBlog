@@ -19,6 +19,12 @@ body {
   min-height: 2000px;
 }
 
+.markdown-container img{
+  display: table-cell;
+  max-width: 100%;
+}
+
+
 // Component styles are injected through grunt
 // injector
 @import 'about/about.scss';

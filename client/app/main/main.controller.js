@@ -19,4 +19,6 @@ angular.module('blogApp')
     $scope.deleteThing = function(thing) {
       $http.delete('/api/things/' + thing._id);
     };
+
+    $scope.markdown = '#hello \n##my is dale \n#### heheheh';
   });
