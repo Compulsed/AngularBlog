@@ -7,7 +7,7 @@
     $scope.posts = [];
 
     $http.get('/api/posts').success(function(posts) {
-      
+
       // Turn your strings into dates, and then subtract them
       // to get a value that is either negative, positive, or zero.
       $scope.posts = posts.sort(function(a,b){
@@ -24,7 +24,6 @@
     });
 
     $scope.remove = function(post, event){
-
       var target = angular.element(event.target);
       target.removeClass('glyphicon-remove');
       target.addClass('glyphicon-refresh');
