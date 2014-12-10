@@ -11,11 +11,11 @@
 
         <div class="form-group">
           <label for="contents">Contents</label>
-          <textarea class="form-control" ng-model="post.contents" rows="10" required></textarea>
+          <textarea id="blog-input" class="form-control" ng-model="post.contents" rows="10" required></textarea>
         </div>
 
         <input type="submit" value="Submit" class="btn btn-primary" ng-click="postEntry()"/>
-        <button class="btn btn-primary" ng-click="previewHighlight()">Preview Syntax Highlighting</button>        
+        <button class="btn btn-primary" ng-click="previewHighlight()">Preview Syntax Highlighting</button>
       </form>
 
     </div>
