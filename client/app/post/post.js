@@ -6,6 +6,6 @@ angular.module('blogApp')
       .state('post', {
         url: '/post',
         templateUrl: 'app/post/post.html',
-        controller: 'PostCtrl'
+        controller: 'PostController'
       });
   });

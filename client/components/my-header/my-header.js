@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('blogApp')
-  .controller('MyHeaderCtrl', function ($scope, $location, $element) {
+  .controller('HeaderController', function ($scope, $location, $element) {
 
   })
   .directive('myHeader', function(){

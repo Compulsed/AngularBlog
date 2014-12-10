@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Controller: PostCtrl', function () {
+describe('Controller: PostController', function () {
 
   // load the controller's module
   beforeEach(module('blogApp'));

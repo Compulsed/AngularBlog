@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('blogApp')
-.controller('BlogEntryCtrl', function($scope, $http, AlertService) {
+.controller('BlogListingController', function($scope, $http, AlertService) {
   $scope.oneAtATime = true;
 
   $scope.posts = [];

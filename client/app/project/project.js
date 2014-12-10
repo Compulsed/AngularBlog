@@ -6,6 +6,6 @@ angular.module('blogApp')
       .state('project', {
         url: '/project',
         templateUrl: 'app/project/project.html',
-        controller: 'ProjectCtrl'
+        controller: 'ProjectController'
       });
   });

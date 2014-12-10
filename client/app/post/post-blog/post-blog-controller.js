@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('blogApp')
-.controller('BlogFormCtrl', function($scope, $http, $location, AlertService) {
+.controller('PostBlogController', function($scope, $http, $location, AlertService) {
   // Defines the inital data
   $scope.reset = function(){
       $scope.post = {

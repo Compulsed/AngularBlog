@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('blogApp')
-  .controller('AboutCtrl', function ($scope, $http) {
+  .controller('AboutController', function ($scope, $http) {
     $scope.awesomeThings = [];
 
     $http.get('/api/things').success(function(awesomeThings) {

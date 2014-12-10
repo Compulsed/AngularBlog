@@ -6,6 +6,6 @@ angular.module('blogApp')
       .state('blogEntry', {
         url: '/blog/:_id',
         templateUrl: 'app/blog-single/blog-single.html',
-        controller: 'BlogSingleCtrl'
+        controller: 'BlogSingleController'
       });
   });

@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('blogApp')
-  .controller('PostCtrl', function ($scope, $http) {
+  .controller('PostController', function ($scope, $http) {
 
 
   });

@@ -1,5 +1,5 @@
 'use strict';
 
 angular.module('blogApp')
-  .controller('BlogCtrl', function ($scope, $http) {
+  .controller('BlogController', function ($scope, $http) {
 });

@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Controller: ProjectCtrl', function () {
+describe('Controller: ProjectController', function () {
 
   // load the controller's module
   beforeEach(module('blogApp'));
