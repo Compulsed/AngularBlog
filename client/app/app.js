@@ -8,7 +8,8 @@ angular.module('blogApp', [
   'ui.bootstrap',
   'btford.markdown',
   'angularMoment',
-  'hljs'
+  'hljs',
+  'angular.filter'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $urlRouterProvider

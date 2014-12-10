@@ -1,4 +1,4 @@
-    'use strict';
+  'use strict';
 
     angular.module('blogApp')
     .controller('PostBlogController', function($scope, $http, $location, AlertService) {
@@ -9,6 +9,12 @@
             contents: ''
           };
       };
+
+      $scope.previewHighlight = function(){
+        $('pre code').each(function(i, block) {
+          hljs.highlightBlock(block);
+        });
+      }
 
       // Triggers if fields contain content
       $scope.postEntry = function(){

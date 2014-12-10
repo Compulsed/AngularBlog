@@ -32,6 +32,14 @@ Thing.find({}).remove(function() {
 var Post = require('../api/post/post.model');
 Post.find({}).remove(function() {
   Post.create({
+    title : 'Image From WallHeaven',
+    contents : '![Alt text](http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-119527.jpg "Optional title")',
+    posted: new Date()
+  }, {
+    title : 'Image from server',
+    contents : '![Alt text](/assets/images/yeoman.png "Optional title")',
+    posted: new Date()
+  }, {
     title : 'Title3',
     contents : 'Build system ignores `spec` files, allowing you to keep tests alongside code. Automatic injection of scripts and styles into your index.html',
     posted: new Date()

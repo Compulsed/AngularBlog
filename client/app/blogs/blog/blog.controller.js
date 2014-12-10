@@ -10,14 +10,13 @@ angular.module('blogApp')
 
     $http.get('/api/posts/' + $stateParams._id).success(function(post) {
       $scope.post = post;
-    });
 
-    // This is bad practice
-    $scope.$on('$viewContentLoaded', function() {
-
+      // Dirty 
       setTimeout(function(){
-        hljs.initHighlighting();
-      }, 2000);
+        $('pre code').each(function(i, block) {
+          hljs.highlightBlock(block);
+        });
+      }, 200);
 
     });
 
