@@ -9,7 +9,16 @@ angular.module('blogApp')
     };
 
     $http.get('/api/posts/' + $stateParams._id).success(function(post) {
-      $scope.post = post
+      $scope.post = post;
+    });
+
+    // This is bad practice
+    $scope.$on('$viewContentLoaded', function() {
+
+      setTimeout(function(){
+        hljs.initHighlighting();
+      }, 2000);
+
     });
 
 });

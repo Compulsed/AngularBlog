@@ -14,6 +14,20 @@
     <h1>More other other</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis velit similique eius nisi pariatur, aliquid aut placeat. Harum quod, ratione, optio molestiae rerum esse beatae, illo labore ullam libero aut.</p>
 
+    <div hljs>
+      'use strict';
+
+      angular.module('blogApp')
+      .config(function ($stateProvider) {
+        $stateProvider
+        .state('blogs/blog', {
+          url: '/blog/:_id',
+          templateUrl: 'app/blogs/blog/blog.html',
+          controller: 'BlogController'
+        });
+      });
+    </div>
+
 
   </div>
 </div>
