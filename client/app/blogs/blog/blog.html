@@ -2,13 +2,12 @@
 
 <my-header head="Blog"></my-header>
 
-
 <div class="container">
   <div class="row">
     <div class="col-lg-12">
-      <h1 class="page-header">Articles:</h1>
 
-      <blog-listing></blog-listing>
+      <h1 class="page-header">{{ post.title }}</h1>
+      <div class="markdown-container" btf-markdown="post.contents"></div>
 
     </div>
   </div>

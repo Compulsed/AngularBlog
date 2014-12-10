@@ -7,7 +7,7 @@ angular.module('blogApp')
       'link': '/'
     }, {
       'title': 'Blogs',
-      'link': '/blog'
+      'link': '/blogs'
     }, {
       'title': 'Post',
       'link': '/post'

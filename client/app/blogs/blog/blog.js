@@ -3,9 +3,9 @@
 angular.module('blogApp')
   .config(function ($stateProvider) {
     $stateProvider
-      .state('blogEntry', {
+      .state('blogs/blog', {
         url: '/blog/:_id',
-        templateUrl: 'app/blog-single/blog-single.html',
-        controller: 'BlogSingleController'
+        templateUrl: 'app/blogs/blog/blog.html',
+        controller: 'BlogController'
       });
   });

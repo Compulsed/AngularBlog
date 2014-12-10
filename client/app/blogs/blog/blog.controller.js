@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('blogApp')
-  .controller('BlogSingleController', function ($scope, $http, $stateParams) {
+  .controller('BlogController', function ($scope, $http, $stateParams) {
 
     $scope.post = {
       title: '',

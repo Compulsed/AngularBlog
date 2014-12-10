@@ -28,9 +28,9 @@ body {
 // Component styles are injected through grunt
 // injector
 @import 'about/about.scss';
-@import 'blog-single/blog-single.scss';
-@import 'blog/blog-listing/blog-listing.scss';
-@import 'blog/blog.scss';
+@import 'blogs/blog-listing/blog-listing.scss';
+@import 'blogs/blog/blog.scss';
+@import 'blogs/blogs.scss';
 @import 'main/main.scss';
 @import 'post/post-blog/post-blog.scss';
 @import 'post/post.scss';
