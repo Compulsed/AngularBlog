@@ -9,7 +9,9 @@ angular.module('blogApp', [
   'btford.markdown',
   'angularMoment',
   'hljs',
-  'angular.filter'
+  'angular.filter',
+  'angular-loading-bar',
+  'ngAnimate'
 ])
   .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $urlRouterProvider

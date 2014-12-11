@@ -19,7 +19,9 @@
     "angular-moment": "~0.8.2",
     "highlightjs": "~8.4.0",
     "angular-highlightjs": "~0.3.2",
-    "angular-filter": "~0.5.1"
+    "angular-filter": "~0.5.1",
+    "angular-loading-bar": "~0.6.0",
+    "angular-animate": "*"
   },
   "devDependencies": {
     "angular-mocks": ">=1.2.*",
