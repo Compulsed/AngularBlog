@@ -1,7 +1,7 @@
   'use strict';
 
   angular.module('blogApp')
-  .controller('BlogListingController', function($scope, $http, AlertService) {
+  .controller('BlogListingController', function($scope, $http, $timeout, AlertService) {
     $scope.oneAtATime = true;
 
     $scope.posts = [];
@@ -16,11 +16,12 @@
 
 
       // Dirty
-      setTimeout(function(){
+      $timeout(function(){
         $('pre code').each(function(i, block) {
           hljs.highlightBlock(block);
         });
       }, 200);
+
     });
 
     $scope.remove = function(post, event){

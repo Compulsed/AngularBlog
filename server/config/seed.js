@@ -40,8 +40,8 @@ Post.find({}).remove(function() {
     contents : '![Alt text](/assets/images/yeoman.png "Optional title")',
     posted: new Date()
   }, {
-    title : 'Title3',
-    contents : 'Build system ignores `spec` files, allowing you to keep tests alongside code. Automatic injection of scripts and styles into your index.html',
+    title : 'Code',
+    contents : '#Hello world\n```\n#include <iostream>\n\nint main(){\n\n\treturn 0;\n}\n```',
     posted: new Date()
   },  {
     title : 'Title4',
