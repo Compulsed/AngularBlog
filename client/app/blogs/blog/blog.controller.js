@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('blogApp')
-  .controller('BlogController', function ($scope, $http, $stateParams) {
+  .controller('BlogController', function ($scope, $http, $stateParams, $timeout) {
 
     $scope.post = {
       title: '',
@@ -11,8 +11,8 @@ angular.module('blogApp')
     $http.get('/api/posts/' + $stateParams._id).success(function(post) {
       $scope.post = post;
 
-      // Dirty 
-      setTimeout(function(){
+      // Dirty
+      $timeout(function(){
         $('pre code').each(function(i, block) {
           hljs.highlightBlock(block);
         });

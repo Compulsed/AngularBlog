@@ -9,9 +9,11 @@ angular.module('blogApp').
 
         if(timeout)
           (function(alerts){
+
             $timeout(function(){
               alerts.shift();
             }, timeout);
+
           })(this.alerts);
 
       }
