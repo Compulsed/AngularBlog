@@ -17,6 +17,9 @@ angular.module('blogApp')
     }, {
       'title': 'About',
       'link': '/about'
+    }, {
+      'title': 'Login',
+      'link': '/login'
     }];
 
     $scope.isCollapsed = true;
